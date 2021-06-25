@@ -1,0 +1,168 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
+/* font-family: 'Roboto Slab', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,700;1,400;1,600&display=swap');
+/* font-family: 'Josefin Slab', serif; */
+/* Color == Hover= #15ff93; 
+  Color = #fff;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.navigation{
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+/* Navigation Active */
+.navigation.active{
+    left: 0;
+}
+.banner{
+    position: relative;
+    width: 65%;
+    height: 100%;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.navLink{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navLink ul{
+    position: relative;
+    width: 100%;
+}
+.navLink ul li{
+    position: relative;
+    list-style: none;
+}
+.navLink ul li a{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+    line-height: 2;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 5px 0;
+    margin-left: 100px;
+    display: inline-block;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.navLink ul li a:hover{
+    color: #15ff93;
+    font-style: italic;
+}
+/* Second Section */
+.sec{
+    position: relative;
+    left: 0px;
+    width: 100%;
+    min-height: 100vh;
+    transition: 1s;
+}
+.sec.active
+{
+    left: 100%;
+}
+header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+.toggle{
+    position: relative;
+    left: 0%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+.toggle.active{
+    left: -200px;   
+}
+.toggle::before{
+     content: '';
+     position: absolute;
+     width: 30px;
+     height: 3px;
+     background: rgb(0, 0, 0);
+     transform: translateY(-6px);
+     transition: .5s;
+}
+.toggle::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    transform: translateY(6px);
+    transition: .5s;
+}
+
+/* Active */
+.toggle.active::before{
+    transform: translateY(0px) rotate(45deg);
+    background: #fff;
+}
+.toggle:hover.active::before,
+.toggle:hover.active::after{
+    background: #15ff93;
+}
+.toggle.active::after{
+    transform: translateY(0px) rotate(-45deg);
+    background: #fff;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #333;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0px;
+    transition: .5s;
+    letter-spacing: 2;
+}
+.btn:hover{
+    background: #15ff93;
+    border-radius: 5px;
+}
