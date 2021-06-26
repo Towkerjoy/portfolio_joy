@@ -139,7 +139,18 @@ header{
     transform: translateY(6px);
     transition: .5s;
 }
-
+.darkMood{
+    font-size: 23px;
+    background:#333;
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+.darkMood:hover{
+    background: #15ff93;
+}
 /* Active */
 .toggle.active::before{
     transform: translateY(0px) rotate(45deg);
@@ -198,10 +209,13 @@ header{
     font-family: 'Josefin Slab', serif;
 }
 .typejs-title{
-    font-size: 30px; color: #fff; font-family: 'Roboto Slab', serif;
+    font-size: 30px; color: #fff; 
+    font-family: 'Roboto Slab', serif;
 }
 #type_2{
-    font-size: 35px; color: #00a05e; font-size: 40px; font-family: 'Josefin Slab', serif; text-transform: uppercase;
+    font-size: 35px; color: #00a05e; 
+    font-size: 40px; font-family: 'Josefin Slab', serif; 
+    text-transform: uppercase;
 }
 
 .typed-cursor{
@@ -213,10 +227,12 @@ header{
     margin: 20px 0px;
 }
 .home-content .btn{
-    background: rgb(36, 36, 36);
+    background: #15ff93;
+    padding: 15px 20px;
 }
 .home-content .btn:hover{
     background: #00a05e;
+    color: #fff;
     border-radius: 5px;
 }
 footer{
@@ -243,5 +259,59 @@ footer{
     display: inline-block;
     transform: scale(0.75);
     font-size: 30px;
+    transition: .3s;
+}
+.forDark{
     color: #fff;
 }
+.forDark2{
+    color: #fff;
+}
+.forDark3{
+    color: #fff;
+}
+.footer-icon li a:hover{
+    color: #00a05e;
+}
+/* DARK Mood Style */
+header.dark{
+    background: #333;
+}
+.toggle.dark::before{
+    background: #fff;
+}
+.toggle.dark::after{
+    background: #fff;
+}
+.btn.dark{
+    background: #fff;
+    color: #333;
+}
+.btn.dark:hover{
+    background: #00a05e;
+    color: #fff;
+}
+/* Header Complet */
+/* Start Body */
+body.dark{
+    background: #fff;
+}
+.sec .home-content h2.dark{
+    color: #333;
+}
+.typejs-title.dark{
+    color: #333;
+}
+.sec .home-content p.dark{
+    color: #333;
+}
+.forDark.dark{
+    color: #333;
+}
+.forDark2.dark{
+    color: #333;
+}
+.forDark3.dark{
+    color: #333;
+}
+/* Dark System Style Finish */
