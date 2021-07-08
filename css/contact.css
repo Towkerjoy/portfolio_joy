@@ -1,0 +1,187 @@
+section{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100%vh;
+    width: 100%;
+    background: #112d42;
+    
+    
+}
+section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #03a8f4;
+}  
+section .container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 2;
+    
+}
+section .container .contactInfo{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #112d42;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+section .container .contactInfo h2{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Josefin Slab', serif;
+    text-transform: uppercase;
+}
+section .container .contactInfo .info{
+    position: relative;
+    margin: 20px 0px;
+}
+section .container .contactInfo .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0px;
+    cursor: pointer;
+    
+}
+section .container .contactInfo .info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+section .container .contactInfo .info li span:nth-child(1) ion-icon{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+    font-size: 30px;
+}
+section .container .contactInfo .info li span:nth-child(2){
+   color: #fff;
+   margin-left: 10px;
+   font-weight: 500;
+   opacity: 0.5;
+   font-size: 20px;
+   font-family: 'Josefin Slab', serif;
+}
+section .container .contactInfo .info li:hover span:nth-child(2),
+section .container .contactInfo .info li:hover span:nth-child(1) ion-icon{
+    opacity: 1;
+}
+section .container .contactInfo .sci {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+section .container .contactInfo .sci li{
+   list-style: none; 
+   margin-right: 20px;
+}
+section .container .contactInfo .sci li a{
+    text-decoration: none;
+}
+section .container .contactInfo .sci li a ion-icon{
+    color: #fff;
+    opacity: 0.5;
+    font-size: 25px;
+}
+section .container .contactInfo .sci li a:hover ion-icon{
+    opacity: 1;
+}
+section .container .contactForm{
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+    
+}
+section .container .contactForm h2{
+    color: #112d42;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+section .container .contactForm .formBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+section .container .contactForm .formBox .inputBox{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+section .container .contactForm .formBox .inputBox.w50{
+    width: 47%;
+}
+section .container .contactForm .formBox .inputBox.w100{
+    width: 100%;
+}
+section .container .contactForm .formBox .inputBox input,
+section .container .contactForm .formBox .inputBox textarea
+
+{
+    width: 100% !important;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none ;
+    resize: none ;
+}
+section .container .contactForm .formBox .inputBox textarea{
+    min-height: 120px;
+}
+section .container .contactForm .formBox .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    transition: .3s;
+    pointer-events: none;
+}
+section .container .contactForm .formBox .inputBox input:focus ~ span,
+section .container .contactForm .formBox .inputBox textarea:focus ~ span
+section .container .contactForm .formBox .inputBox input:valid ~ span,
+section .container .contactForm .formBox .inputBox textarea:valid ~  span
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #03a8f4;
+}
+
+section .container .contactForm .formBox .inputBox input[type="submit"]{
+    background: #112d42;
+    cursor: pointer; 
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+    transition: .4s;
+    text-transform: uppercase;
+}
+section .container .contactForm .formBox .inputBox input[type="submit"]:hover{
+    background: #03a8f4;
+}
