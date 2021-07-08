@@ -1,0 +1,87 @@
+
+.service{
+    width: 1400px;
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly ;
+}
+.card{
+    width: calc(25% - 30px);
+    background: #333;
+    color: #fff;
+    padding: 30px 20px;
+    cursor: default;
+    transition: .5s;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+.service h2{
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    font-weight: 900;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+    color: #fff;
+    /* font-family: 'Josefin Slab', serif; */
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+.service h2.dark{
+    color: #333;
+}
+.service h2::after{
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    background: #fff;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: none;
+}
+
+.card:hover{
+    background: #04dd78;
+}
+.card:hover .box ion-icon{
+    background: #ffb613;
+    transform:  scale(1.1 );
+    transform: rotate(360deg);
+}
+.box ion-icon{
+    font-size: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    margin-bottom: 10px;
+    transition: .5s;
+}
+.box h3{
+    font-size: 25px;
+    font-family: 'Josefin Slab', serif;
+}
+.box p{
+    text-align: justify;
+    margin: 10px 0px;
+    font-size: 18px;
+    font-family: 'Josefin Slab', serif;
+}
